@@ -1,5 +1,3 @@
-import random
-
 '''
 Problem:
 Design a stack that supports push, pop, top, and retrieving the minimum
@@ -62,41 +60,3 @@ class SpecialStack(object):
         if len(self.stack) == 0:
             return None
         return self.stack[-1][1]
-
-
-def main():
-
-    stack = SpecialStack()
-    global_min = -4
-    print(stack)
-    for i in range(5):
-        stack.push(random.randint(0, 30))
-    print(str(stack))
-    print("stack:".ljust(7), stack)
-    print("min:".ljust(7), stack.getMin())
-    print("pop:".ljust(7), stack.pop())
-    print("push: ".ljust(7), global_min)
-    stack.push(global_min)
-    print("stack:".ljust(7), stack)
-    print("min:".ljust(7), stack.getMin())
-    print("pop:".ljust(7), stack.pop())
-    print("stack:".ljust(7), stack)
-    print("top:".ljust(7), stack.top())
-    print("min:".ljust(7), stack.getMin())
-    print("pop:".ljust(7), stack.pop())
-    print("stack:".ljust(7), stack)
-    print("pop:".ljust(7), stack.pop())
-    print("stack:".ljust(7), stack)
-    print("pop:".ljust(7), stack.pop())
-    print("stack:".ljust(7), stack)
-    print("pop:".ljust(7), stack.pop())
-    print("stack:".ljust(7), stack)
-    print("min:".ljust(7), stack.getMin())
-    print("pop:".ljust(7), stack.pop())
-    print("pop:".ljust(7), stack.pop())
-    print("pop:".ljust(7), stack.pop())
-    print("pop:".ljust(7), stack.pop())
-
-
-if __name__ == '__main__':
-    main()
