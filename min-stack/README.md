@@ -21,7 +21,8 @@ minimum value) then we insert the new value as (value, value)
 In this final case we just add it as (value, previous minimum value) i.e stack\[\-\1\]\[\1\]
 
 # Unit test results
-`test min`\n
+`test min`
+
 `Stack: [22, 1, 4, 5, 6, 7, 5, 3, 11, 15, -4, 100, ]`\n
 `minimum: -4`\n
 `Stack: [22, 1, 4, 5, ]`\n
